@@ -1,0 +1,87 @@
+html{
+  font-size: :62.5%
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 70vw 30vw;
+  grid-template-rows: 40vh 20vh 20vh;
+  grid-template-areas: "ImageSlider TwitterFeed" "News TwitterFeed" "Extra TwitterFeed";
+  background-color: #444;
+  color: #fff;
+  padding: 0px;
+  font-size: 150%
+}
+
+.TwitterFeed{
+  grid-area: TwitterFeed;
+  height:80vh;
+  width: 98%;
+  width:inherit;
+  position: relative;
+  overflow: scroll;
+
+}
+.twitter-timeline{
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.ImageSlider {
+   grid-area: ImageSlider;
+   slideMargin:5vw;
+ }
+
+ .ImageSlides{
+   width: 98%;
+   height: 38vh;
+   border-right: 2%;
+   border-left:2%;
+   border-bottom: 2vh;
+ }
+
+.News {
+   grid-area: News;
+   overflow: hidden;
+   list-style-type: none;
+   overflow-x: hidden;
+   padding-top: 2vh;
+   padding-left: 2vw;
+   padding-right: 2vw;
+ }
+ .ListItems{
+   font-size: 62.5%;
+   list-style: none;
+   overflow: scroll;
+ }
+
+.Extra {
+  grid-area: Extra;
+  overflow: hidden;
+  padding-top: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.ExtraItems{
+  font-size: 62.5%;
+  list-style: none;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+
+
+@media (max-width : 1280px){
+  .grid-container{
+  grid-template-columns: 90vw;
+  grid-template-rows: 50vh 50vh 50vh 50vh;
+  grid-template-areas: "ImageSlider" "News" "Extra" "TwitterFeed" ;
+  overflow: scroll;
+  }
+
+}

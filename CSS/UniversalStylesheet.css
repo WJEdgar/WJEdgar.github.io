@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'B612 Mono', monospace;
+  src: url(https://fonts.googleapis.com/css?family=B612+Mono);22
+}
+header{
+  background-color: black;
+  width: 100vw;
+  height: 10vh;
+  padding: 10px;
+  padding-left: 0px;
+}
+
+.grid-container {
+  color: #fff;
+}
+
+.LogoPos{
+    background-color: white;
+    width: 25%;
+    height: 80%;
+    display: block;
+
+}
+
+.Logo{
+  width: 100%;
+  height: auto;
+}
+
+#NavList{
+  list-style-type: none;
+   padding: 5vw;
+   line-height: 5vw;
+
+}
+
+.Nav{
+  position: absolute;
+  top: 2vh;
+  right:4vw;
+  list-style-type: none;
+}
+.material-icons{
+  color:white;
+  position: absolute;
+  right: 0.2vw;
+  font-size: 80px;
+}
+.DropDown{
+  background-color: #000;
+  color: white;
+  z-index: 1;
+  margin: 1%;
+  position: absolute;
+  top:8vh;
+  right: 0;
+  width: 40vw;
+  height: 80vh;
+  overflow: visible;
+  display: none;
+}
+footer{
+  background-color: black;
+  width: 100vw;
+  height: 10vh;
+  padding: 10px;
+  padding-left: 0px;
+}

@@ -1,0 +1,52 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 40vh 40vh;
+  grid-template-areas: "ImageSlider Titles" "News Media";
+  background-color: #444;
+}
+
+@media (max-width : 1280px){
+  .grid-container {
+  display: grid;
+  grid-template-columns: 90vw;
+  grid-template-rows: 50vh 50vh 50vh 50vh;
+  grid-template-areas: "ImageSlider" "Titles" "News" "Media";
+}
+}
+
+.News { grid-area: News;
+  padding-top: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.Media { grid-area: Media; padding-left: 25vw; padding-top: 4vh; align-items: center;}
+
+
+
+.ImageSlider {
+  grid-area: ImageSlider;
+  padding-bottom: 4vh;
+ }
+
+ .ImageSlides{
+   width: 98%;
+   height: 38vh;
+   border-right: 2%;
+   border-left:2%;
+   border-bottom: 2vh;
+ }
+
+ .SectionTitle{
+   font-size: 150%;
+}
+
+.ListItems{
+  font-size 100%;
+  list-style: none;
+  overflow: hidden;
+}
+.Titles { grid-area: Titles; padding-top: 2vh;
+padding-left: 2vw;
+padding-right: 2vw;}

@@ -1,0 +1,56 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 30vw 30vw 40vw;
+  grid-template-rows: 50vh 10vh 10vh 10vh;
+  grid-template-areas: "Items Buy Basket" "Items Buy Delete" "Items Buy Price" "Items Buy Checkout";
+  background-color: #444;
+}
+
+@media (max-width : 1280px){
+  .grid-container {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 50vh 50vh 10vh 10vh 10vh;
+  overflow: scroll;
+  grid-template-areas: "Items Buy" "Basket Basket" "Delete Delete" "Price Price" "Checkout Checkout";
+}
+}
+
+.Basket { grid-area: Basket; background-color: #fff; color: #000; padding-left: 2vw; padding-top: 2vw; padding-bottom: 2vw }
+
+.Delete { grid-area: Delete; background-color: #fff; color: #000;}
+
+.Price {
+  grid-area: Price;
+  background-color: #fff;
+  color: #000;
+  border-style: solid;
+  border-color: #000;
+}
+
+.Checkout {
+  grid-area: Checkout;
+  background-color: #444;
+  color: #c00;
+  text-align:
+  center;
+  vertical-align: middle;
+  padding-top: 5vh;
+  border-style: solid;
+  border-color: #fff;
+}
+
+.ShopItems {
+  grid-area: Items;
+  vertical-align: middle;
+   line-height: 5vw;
+}
+
+.ShopList{
+  list-style: none;
+  text-align: center;
+margin: auto;
+}
+
+.ShopBuy { grid-area: Buy;
+ line-height: 5vw;}
